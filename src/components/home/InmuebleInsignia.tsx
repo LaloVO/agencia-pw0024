@@ -23,7 +23,7 @@ const InmuebleInsignia = () => {
 
   const phone = user?.telefono_usuario || '5217351234567';
   const cleanPhone = phone.replace(/\D/g, '');
-  const whatsappMsg = encodeURIComponent("Hola Larissa, me interesa la casa de $2.5 MDP en Fracc. Tezahuapan, Cuautla Morelos. Me gustaría recibir más detalles.");
+  const whatsappMsg = encodeURIComponent("Hola Asesor Demo, me interesa la casa de $2.5 MDP en Fracc. Tezahuapan, Cuautla Morelos. Me gustaría recibir más detalles.");
   const whatsappUrl = `https://wa.me/${cleanPhone}?text=${whatsappMsg}`;
 
   const specs = [

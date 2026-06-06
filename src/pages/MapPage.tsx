@@ -59,7 +59,7 @@ const MapPage = () => {
   return (
     <>
       <Helmet>
-        <title>Explorar Propiedades en el Mapa | Larissa García</title>
+        <title>Explorar Propiedades en el Mapa | Asesor Demo</title>
         <meta
           name="description"
           content="Usa nuestro mapa interactivo para localizar casas de un solo nivel, terrenos y departamentos en Morelos. Filtra por precio y características fácilmente."

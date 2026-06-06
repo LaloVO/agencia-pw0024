@@ -19,10 +19,10 @@ const PropertiesPage = () => {
   return (
     <>
       <Helmet>
-        <title>Catálogo Completo de Propiedades | Larissa García</title>
+        <title>Catálogo Completo de Propiedades | Asesor Demo</title>
         <meta
           name="description"
-          content="Explora el inventario completo de casas de un solo nivel, departamentos y terrenos listos para escriturar en Cuautla y Morelos con Larissa García."
+          content="Explora el inventario completo de casas de un solo nivel, departamentos y terrenos listos para escriturar en Cuautla y Morelos con Asesor Demo."
         />
       </Helmet>
 

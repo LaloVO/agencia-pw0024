@@ -60,7 +60,7 @@ const Navbar = () => {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="font-serif font-extrabold text-xl md:text-2xl tracking-tight text-primary dark:text-white transition-colors"
         >
-          {site?.site_name || 'Larissa García'}
+          {site?.site_name || 'Asesor Demo'}
         </Link>
 
         {/* Desktop Navigation */}

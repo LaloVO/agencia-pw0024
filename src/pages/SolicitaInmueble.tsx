@@ -10,7 +10,7 @@ export default function SolicitaInmueble() {
   return (
     <>
       <Helmet>
-        <title>Búsqueda Inteligente | {user?.nombre_usuario ?? "Larissa García"}</title>
+        <title>Búsqueda Inteligente | {user?.nombre_usuario ?? "Asesor Demo"}</title>
         <meta
           name="description"
           content="Completa nuestra solicitud inteligente de 6 pasos para encontrar tu propiedad ideal en Morelos. Evaluamos tu perfil y presupuesto para darte la recomendación perfecta."

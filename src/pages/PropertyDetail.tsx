@@ -19,7 +19,7 @@ const PropertyDetail = () => {
 
   const whatsappNumber = user?.telefono_usuario?.replace(/\D/g, '') ?? '5217351234567';
   const whatsappMsg = property
-    ? encodeURIComponent(`Hola Larissa, me interesa la propiedad: ${property.nombre}. ¿Podrías darme más información?`)
+    ? encodeURIComponent(`Hola Asesor Demo, me interesa la propiedad: ${property.nombre}. ¿Podrías darme más información?`)
     : '';
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMsg}`;
 
@@ -59,12 +59,12 @@ const PropertyDetail = () => {
   const mainImage = images[0]?.image_url ?? 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1200&auto=format&fit=crop';
   const badge = property.id_tipo_accion === 2 ? 'Renta' : 'Venta';
   const location = [property.colonia, property.direccion].filter(Boolean).join(', ');
-  const profileImg = user?.imagen_perfil_usuario || '/profile.png';
+  const profileImg = user?.imagen_perfil_usuario || '/agent-avatar.svg';
 
   return (
     <>
       <Helmet>
-        <title>{property.nombre} | {user?.nombre_usuario ?? 'Larissa García'}</title>
+        <title>{property.nombre} | {user?.nombre_usuario ?? 'Asesor Demo'}</title>
         <meta name="description" content={property.descripcion ?? property.nombre} />
       </Helmet>
 
@@ -180,11 +180,11 @@ const PropertyDetail = () => {
                 <div className="flex items-center gap-3.5 pb-5 border-b border-slate-100 dark:border-slate-800/80">
                   <img
                     src={profileImg}
-                    alt={user?.nombre_usuario || 'Larissa García'}
+                    alt={user?.nombre_usuario || 'Asesor Demo'}
                     className="w-12 h-12 rounded-full object-cover border border-slate-100 dark:border-slate-800 shadow-sm"
                   />
                   <div>
-                    <p className="font-sans font-bold text-sm text-slate-900 dark:text-white">{user?.nombre_usuario || 'Larissa García'}</p>
+                    <p className="font-sans font-bold text-sm text-slate-900 dark:text-white">{user?.nombre_usuario || 'Asesor Demo'}</p>
                     <p className="font-sans text-xs text-slate-400">Asesora Inmobiliaria Profesional</p>
                   </div>
                 </div>

@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-start gap-12">
           <div className="space-y-4">
             <Link to="/" className="font-serif text-2xl font-extrabold tracking-tight hover:text-accent transition-colors block">
-              {site?.site_name || 'Larissa García'}
+              {site?.site_name || 'Asesor Demo'}
             </Link>
             <p className="font-sans text-sm text-slate-400 max-w-xs leading-relaxed">
               Procesos inmobiliarios ágiles, seguros y transparentes en Cuautla y todo Morelos. Tu patrimonio en las mejores manos.
@@ -68,7 +68,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-16 pt-8 border-t border-slate-800 text-[11px] text-slate-500 uppercase tracking-widest flex flex-col sm:flex-row justify-between gap-4 font-sans">
-          <span>© {new Date().getFullYear()} {site?.site_name || 'Larissa García'} | Proptech Real Estate</span>
+          <span>© {new Date().getFullYear()} {site?.site_name || 'Asesor Demo'} | Proptech Real Estate</span>
           <span className="flex items-center gap-1">
             Desarrollado con
             <span className="text-accent">✦</span>

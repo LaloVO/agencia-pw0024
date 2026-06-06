@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Phone, FileText, CheckCircle2, Award, Shield } from 'lucide-react';
 import { useSiteUser } from '@/hooks/useSiteUser';
 
-const BioLarissa = () => {
+const BioAgent = () => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const { user } = useSiteUser();
@@ -21,10 +21,10 @@ const BioLarissa = () => {
     return () => observer.disconnect();
   }, []);
 
-  const profileImg = user?.imagen_perfil_usuario || '/profile.png';
+  const profileImg = user?.imagen_perfil_usuario || '/agent-avatar.svg';
   const phone = user?.telefono_usuario || '5217351234567';
   const cleanPhone = phone.replace(/\D/g, '');
-  const whatsappMsg = encodeURIComponent("Hola Larissa, me gustaría recibir asesoría para encontrar una propiedad en Morelos.");
+  const whatsappMsg = encodeURIComponent("Hola Asesor Demo, me gustaría recibir asesoría para encontrar una propiedad en Morelos.");
   const whatsappUrl = `https://wa.me/${cleanPhone}?text=${whatsappMsg}`;
 
   return (
@@ -47,12 +47,12 @@ const BioLarissa = () => {
             <div className="relative w-[80%] aspect-[3/4] rounded-3xl overflow-hidden shadow-elegant border border-white dark:border-slate-800 z-10 group">
               <img 
                 src={profileImg} 
-                alt="Larissa García" 
+                alt="Asesor Demo" 
                 className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-slate-950/10 to-transparent" />
               <div className="absolute bottom-6 left-6 text-white text-left">
-                <span className="font-serif font-extrabold text-2xl block">{user?.nombre_usuario || 'Larissa García'}</span>
+                <span className="font-serif font-extrabold text-2xl block">{user?.nombre_usuario || 'Asesor Demo'}</span>
                 <span className="font-sans text-slate-300 text-xs tracking-wider uppercase font-semibold">Asesora Profesional • Morelos</span>
               </div>
             </div>
@@ -67,7 +67,7 @@ const BioLarissa = () => {
                 Asesoría confiable, directa y profesional
               </h2>
               <p className="font-sans text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed">
-                Hola, soy Larissa García. Mi compromiso es ayudarte a encontrar el hogar de tus sueños o la inversión ideal en el hermoso estado de Morelos con total tranquilidad y rapidez.
+                Hola, soy Asesor Demo. Mi compromiso es ayudarte a encontrar el hogar de tus sueños o la inversión ideal en el hermoso estado de Morelos con total tranquilidad y rapidez.
               </p>
               <p className="font-sans text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
                 Me especializo en perfilar y gestionar créditos hipotecarios (Bancarios, Infonavit, Fovissste) y en simplificar toda la carga administrativa del proceso. Conmigo obtienes un trato profesional, directo, transparente y sin fricciones burocráticas.
@@ -121,4 +121,4 @@ const BioLarissa = () => {
   );
 };
 
-export default BioLarissa;
+export default BioAgent;
